@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let myButton = document.getElementById('myButton');
 
-    const numeroAleatorio = Math.floor(Math.random() * 10);
+    let numeroAleatorio = Math.floor(Math.random() * 10);
 
     const resultMessage = document.querySelector('.result_message');
 
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (guess === numeroAleatorio) {
             resultMessage.innerText = 'Você acertou!';
+            numeroAleatorio = Math.floor(Math.random() * 10);
         }
         else {
             resultMessage.innerText = 'Você errou, tente novamente!';
