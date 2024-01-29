@@ -14,10 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (guess === numeroAleatorio) {
             resultMessage.innerText = 'Você acertou!';
+
+            document.getElementById('guess').value = '';
+
             numeroAleatorio = Math.floor(Math.random() * 10);
+            console.log("O número aleatório gerado é: " + numeroAleatorio);
         }
         else {
             resultMessage.innerText = 'Você errou, tente novamente!';
+            
+            document.getElementById('guess').value = '';
         }
     }
 
