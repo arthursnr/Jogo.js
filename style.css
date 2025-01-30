@@ -1,13 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-body{
-    background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background: linear-gradient(288deg, #c2e9fb 0%, #a1c4fd 100%);
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Faz o body ocupar toda a altura da tela */
+}
+
+.gameBox {
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 24px;
+  background: linear-gradient(
+    0deg,
+    rgba(194, 233, 251, 0.7) 10%
+    rgba(79, 85, 139, 0.7) 100%,
+  );
+  position: relative;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Aplica sombra em toda a caixa */
+}
+
+.h1Box {
+  width: 100%;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.gameBox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha o conteúdo dentro da gameBox2 verticalmente */
+  align-items: center; /* Centraliza horizontalmente o conteúdo da gameBox2 */
+  width: 100%;
+  flex-grow: 1; /* Faz a gameBox2 ocupar o espaço restante da gameBox */
+  font-size: 24px;
+  gap: 16px;
+}
+
+button {
+  background-color: rgb(110, 188, 224);
+}
+input,
+button {
+  border-radius: 8px;
+  padding: 15px;
+  border: none;
+}
